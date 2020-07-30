@@ -1,0 +1,10 @@
+.card{
+    width: 100%;
+    margin-top: 1em;
+}
+.flex-buttons{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

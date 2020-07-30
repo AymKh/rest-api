@@ -1,0 +1,8 @@
+<%- include('partials/header') %>
+    <form action="/posts" method="POST">
+        <input type="text" placeholder="Title" name="title">
+        <input type="text" placeholder="Author" name="author">
+        <textarea name="content"  cols="30" rows="10" placeholder="Post"></textarea>
+        <input type="submit" value="Psot">
+    </form>
+<%- include('partials/footer') %>

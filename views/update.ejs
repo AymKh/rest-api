@@ -1,0 +1,8 @@
+<%- include('partials/header') %>
+    <form action="/posts/<%=post._id%>?_method=PUT" method="POST">
+        <input type="text" placeholder="Title" name="post[title]" value="<%= post.title %>">
+        <input type="text" placeholder="Author" name="post[author]" value="<%= post.author %>">
+        <textarea name="post[content]"  cols="30" rows="10" placeholder="Post"><%= post.content %></textarea>
+        <input type="submit" value="Update">
+    </form>
+<%- include('partials/footer') %>
