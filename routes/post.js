@@ -1,7 +1,7 @@
-const mongoose = require('mongoose')
-const express = require('express')
-const router   = express.Router()
-const Post = require('../models/post')
+const mongoose  = require('mongoose')
+const express   = require('express')
+const router    = express.Router()
+const Post      = require('../models/post')
 
 // get all posts
 router.get('/', async (req, res)=>{
