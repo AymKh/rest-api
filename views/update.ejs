@@ -1,8 +1,17 @@
 <%- include('partials/header') %>
     <form action="/posts/<%=post._id%>?_method=PUT" method="POST">
-        <input type="text" placeholder="Title" name="post[title]" value="<%= post.title %>">
-        <input type="text" placeholder="Author" name="post[author]" value="<%= post.author %>">
-        <textarea name="post[content]"  cols="30" rows="10" placeholder="Post"><%= post.content %></textarea>
-        <input type="submit" value="Update">
+        <div class="form-group">
+            <label for="postTitle">Title</label>
+            <input type="text" class="form-control" id="postTitle" placeholder="Title" name="title" value="<%= post.title %>">
+        </div>
+        <div class="form-group">
+            <label for="postAuthor">Author</label>
+            <input type="text" class="form-control" id="postAuthor" placeholder="Author" name="author" value="<%= post.author %>">
+        </div>
+        <div class="form-group">
+            <label for="postContent">post</label>
+            <textarea name="content" class="form-control" id="postContent" cols="60" rows="10" placeholder="Post"><%= post.content %></textarea>
+        </div>
+        <input type="submit" value="Update" class="btn btn-large btn-primary">
     </form>
 <%- include('partials/footer') %>

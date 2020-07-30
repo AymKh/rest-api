@@ -1,8 +1,17 @@
 <%- include('partials/header') %>
     <form action="/posts" method="POST">
-        <input type="text" placeholder="Title" name="title">
-        <input type="text" placeholder="Author" name="author">
-        <textarea name="content"  cols="30" rows="10" placeholder="Post"></textarea>
-        <input type="submit" value="Psot">
+        <div class="form-group">
+            <label for="postTitle">Title</label>
+            <input type="text" class="form-control" id="postTitle" placeholder="Title" name="title">
+        </div>
+        <div class="form-group">
+            <label for="postAuthor">Author</label>
+            <input type="text" class="form-control" id="postAuthor" placeholder="Author" name="author">
+        </div>
+        <div class="form-group">
+            <label for="postContent">post</label>
+            <textarea name="content" class="form-control" id="postContent" cols="60" rows="10" placeholder="Post"></textarea>
+        </div>
+        <input type="submit" value="POST" class="btn btn-large btn-primary">
     </form>
 <%- include('partials/footer') %>
