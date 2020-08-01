@@ -1,10 +1,10 @@
 # rest-api
 Fully functioning REST API, built with Node, Express, ejs and Mongodb
 
-### Getting Started
+## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Installation
+## Installation
 
 Here's how to setup the up to run on a local env
 installing packages
@@ -24,7 +24,7 @@ node server.js
 ```
 nodemon server.js
 ```
-### Routes
+## Routes
 Path                | HTTP Verb | Purpose      
 ------------------- | --------- | ----------------------------------:
 /posts              | GET       | List all posts    
@@ -36,7 +36,7 @@ Path                | HTTP Verb | Purpose
 /posts/:id          | DELETE    | Delete one post then redirect      
  
 
-### Preview
+## Preview
 [![Deployed demo on heroku](http://g.recordit.co/ztQ52Rnozf.gif)]()
 
 ## License
